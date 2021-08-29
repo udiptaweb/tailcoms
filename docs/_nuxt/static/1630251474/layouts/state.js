@@ -1,0 +1,1 @@
+window.__NUXT__=(function(a){return {staticAssetsBase:"\u002Ftailcoms-preview\u002F_nuxt\u002Fstatic\u002F1630251474",layout:"App",error:a,serverRendered:true,routePath:"\u002Flayouts",config:{_app:{basePath:"\u002Ftailcoms-preview\u002F",assetsPath:"\u002Ftailcoms-preview\u002F_nuxt\u002F",cdnURL:a}}}}(null));
