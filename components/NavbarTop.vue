@@ -22,11 +22,11 @@
           <div v-show="show_mobile_drop" class="lg:hidden origin-top-right z-50 absolute top-8 right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
               <div class="py-1" role="none">
                   <NuxtLink to="/layouts">
-                  <a @click="show_mobile_drop = false;" href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Layouts</a>
+                  <span @click="show_mobile_drop = false;" href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Layouts</span>
                   </NuxtLink>
                   <h5 class="px-4">Components</h5>
                   <NuxtLink to="/components/breadcrumbs">
-                  <a @click="show_mobile_drop = false;" href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Breadcrumb</a>
+                  <span @click="show_mobile_drop = false;" href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Breadcrumb</span>
                   </NuxtLink>
               </div>
           </div>

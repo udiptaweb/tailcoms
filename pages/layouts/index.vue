@@ -2,7 +2,7 @@
 <div class="w-full flex flex-col justify-start gap-y-2 bg-white dark:bg-gray-800 h-full p-4">
   <h1 class="text-2xl font-semibold tracking-widest text-gray-700 rounded-lg dark-mode:text-white">Layouts</h1>
   <p class="text-gray-700">Layout provides the basic structure of the page</p>
-  <h1 class="text-xl font-semibold tracking-widest text-gray-700 rounded-lg dark-mode:text-white">Examples</h1>
+  <h2 class="text-xl font-semibold tracking-widest text-gray-700 rounded-lg dark-mode:text-white">Examples</h2>
   <code-and-preview>
     <template v-slot:preview>
       <div class="dark:bg-gray-900">
