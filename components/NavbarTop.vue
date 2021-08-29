@@ -5,7 +5,7 @@
           <div class="flex items-center justify-between relative">
               <div class="flex items-center">
                   <a class="text-2xl w-20 font-bold text-gray-800 dark:text-white lg:text-3xl hover:text-gray-700 dark:hover:text-gray-300" href="#">
-                      <img src="/logo.png" alt="Tailcoms">
+                      <img src="~/assets/logo.png" alt="Tailcoms">
                   </a>
               </div>
               <!-- Mobile menu button -->
@@ -21,7 +21,13 @@
           <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
           <div v-show="show_mobile_drop" class="lg:hidden origin-top-right z-50 absolute top-8 right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
               <div class="py-1" role="none">
-                <a href="/" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Components</a>
+                  <NuxtLink to="/layouts">
+                  <a @click="show_mobile_drop = false;" href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Layouts</a>
+                  </NuxtLink>
+                  <h5 class="px-4">Components</h5>
+                  <NuxtLink to="/components/breadcrumbs">
+                  <a @click="show_mobile_drop = false;" href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Breadcrumb</a>
+                  </NuxtLink>
               </div>
           </div>
           <div class="items-center md:flex hidden">
