@@ -12,7 +12,7 @@
                     <div class="flex items-center justify-between relative">
                         <div class="flex items-center">
                             <a class="text-2xl w-20 font-bold text-gray-800 dark:text-white lg:text-3xl hover:text-gray-700 dark:hover:text-gray-300" href="#">
-                                <img src="/logo.png" alt="Tailcoms">
+                                <img src="~/assets/logo.png" alt="Tailcoms">
                             </a>
                         </div>
                         <!-- Mobile menu button -->
