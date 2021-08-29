@@ -1,10 +1,10 @@
 <template>
-  <div class="bg-gray-100 dark:bg-gray-900">
+  <div class="dark:bg-gray-900">
       <NavbarTop />
       <div class="w-full">
           <div class="min-h-screen">
-            <div class="flex justify-center">
-              <div class="w-1/4 flex flex-col justify-start h-screen hidden md:block">
+            <div class="flex justify-center gap-x-2">
+              <div class="w-1/4 shadow hidden md:block">
                 <Sidebar />
               </div>
               <div class="w-full md:w-3/4 flex justify-center gap-x-4">
