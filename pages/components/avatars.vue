@@ -6,26 +6,26 @@
       <template v-slot:preview>
         <div class="flex gap-x-2">
           <div class="w-20 h-20 rounded overflow-hidden shadow-inner text-center cursor-pointe">
-            <img src="https://pickaface.net/gallery/avatar/unr_random_180410_1905_z1exb.png" alt="Avatar1" class="object-cover object-center w-full h-full visible" />
+            <img src="~/assets/avatar.png" alt="Avatar1" class="object-cover object-center w-full h-full visible" />
           </div>
           <div class="w-16 h-16 rounded overflow-hidden shadow-inner text-center cursor-pointe">
-            <img src="https://pickaface.net/gallery/avatar/unr_random_180410_1905_z1exb.png" alt="Avatar1" class="object-cover object-center w-full h-full visible" />
+            <img src="~/assets/avatar.png" alt="Avatar1" class="object-cover object-center w-full h-full visible" />
           </div>
           <div class="w-14 h-14 rounded overflow-hidden shadow-inner text-center cursor-pointe">
-            <img src="https://pickaface.net/gallery/avatar/unr_random_180410_1905_z1exb.png" alt="Avatar1" class="object-cover object-center w-full h-full visible" />
+            <img src="~/assets/avatar.png" alt="Avatar1" class="object-cover object-center w-full h-full visible" />
           </div>
         </div>
       </template>
       <template v-slot:code>
         &lt;div class="flex gap-x-2"&gt;
           &lt;div class="w-20 h-20 rounded overflow-hidden shadow-inner text-center cursor-pointe"&gt;
-            &lt;img src="https://pickaface.net/gallery/avatar/unr_random_180410_1905_z1exb.png" alt="Avatar1" class="object-cover object-center w-full h-full visible" /&gt;
+            &lt;img src="~/assets/avatar.png" alt="Avatar1" class="object-cover object-center w-full h-full visible" /&gt;
           &lt;/div&gt;
           &lt;div class="w-16 h-16 rounded overflow-hidden shadow-inner text-center cursor-pointe"&gt;
-            &lt;img src="https://pickaface.net/gallery/avatar/unr_random_180410_1905_z1exb.png" alt="Avatar1" class="object-cover object-center w-full h-full visible" /&gt;
+            &lt;img src="~/assets/avatar.png" alt="Avatar1" class="object-cover object-center w-full h-full visible" /&gt;
           &lt;/div&gt;
           &lt;div class="w-14 h-14 rounded overflow-hidden shadow-inner text-center cursor-pointe"&gt;
-            &lt;img src="https://pickaface.net/gallery/avatar/unr_random_180410_1905_z1exb.png" alt="Avatar1" class="object-cover object-center w-full h-full visible" /&gt;
+            &lt;img src="~/assets/avatar.png" alt="Avatar1" class="object-cover object-center w-full h-full visible" /&gt;
           &lt;/div&gt;
         &lt;/div&gt;
       </template>
@@ -34,26 +34,26 @@
       <template v-slot:preview>
         <div class="flex gap-x-2">
           <div class="w-20 h-20 rounded-full overflow-hidden shadow-inner text-center cursor-pointe">
-            <img src="https://pickaface.net/gallery/avatar/unr_random_180410_1905_z1exb.png" alt="Avatar1" class="object-cover object-center w-full h-full visible" />
+            <img src="~/assets/avatar.png" alt="Avatar1" class="object-cover object-center w-full h-full visible" />
           </div>
           <div class="w-16 h-16 rounded-full overflow-hidden shadow-inner text-center cursor-pointe">
-            <img src="https://pickaface.net/gallery/avatar/unr_random_180410_1905_z1exb.png" alt="Avatar1" class="object-cover object-center w-full h-full visible" />
+            <img src="~/assets/avatar.png" alt="Avatar1" class="object-cover object-center w-full h-full visible" />
           </div>
           <div class="w-14 h-14 rounded-full overflow-hidden shadow-inner text-center cursor-pointe">
-            <img src="https://pickaface.net/gallery/avatar/unr_random_180410_1905_z1exb.png" alt="Avatar1" class="object-cover object-center w-full h-full visible" />
+            <img src="~/assets/avatar.png" alt="Avatar1" class="object-cover object-center w-full h-full visible" />
           </div>
         </div>
       </template>
       <template v-slot:code>
         &lt;div class="flex gap-x-2"&gt;
           &lt;div class="w-20 h-20 rounded-full overflow-hidden shadow-inner text-center cursor-pointe"&gt;
-            &lt;img src="https://pickaface.net/gallery/avatar/unr_random_180410_1905_z1exb.png" alt="Avatar1" class="object-cover object-center w-full h-full visible" /&gt;
+            &lt;img src="~/assets/avatar.png" alt="Avatar1" class="object-cover object-center w-full h-full visible" /&gt;
           &lt;/div&gt;
           &lt;div class="w-16 h-16 rounded-full overflow-hidden shadow-inner text-center cursor-pointe"&gt;
-            &lt;img src="https://pickaface.net/gallery/avatar/unr_random_180410_1905_z1exb.png" alt="Avatar1" class="object-cover object-center w-full h-full visible" /&gt;
+            &lt;img src="~/assets/avatar.png" alt="Avatar1" class="object-cover object-center w-full h-full visible" /&gt;
           &lt;/div&gt;
           &lt;div class="w-14 h-14 rounded-full overflow-hidden shadow-inner text-center cursor-pointe"&gt;
-            &lt;img src="https://pickaface.net/gallery/avatar/unr_random_180410_1905_z1exb.png" alt="Avatar1" class="object-cover object-center w-full h-full visible" /&gt;
+            &lt;img src="~/assets/avatar.png" alt="Avatar1" class="object-cover object-center w-full h-full visible" /&gt;
           &lt;/div&gt;
         &lt;/div&gt;
       </template>
