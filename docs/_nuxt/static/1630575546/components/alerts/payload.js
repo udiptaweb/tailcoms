@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/components/alerts", {data:[{}],fetch:{},mutations:void 0});
