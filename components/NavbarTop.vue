@@ -31,6 +31,9 @@
                   <NuxtLink to="/components/avatars">
                   <span @click="show_mobile_drop = false;" href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Avatars</span>
                   </NuxtLink>
+                  <NuxtLink to="/components/buttons">
+                  <span @click="show_mobile_drop = false;" href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Buttons</span>
+                  </NuxtLink>
                   <NuxtLink to="/components/breadcrumbs">
                   <span @click="show_mobile_drop = false;" href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Breadcrumb</span>
                   </NuxtLink>
