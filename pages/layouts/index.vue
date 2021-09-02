@@ -6,7 +6,7 @@
   <code-and-preview>
     <template v-slot:preview>
       <div class="dark:bg-gray-900">
-          <nav class="bg-white shadow dark:bg-gray-800  sticky top-0 z-30">
+          <nav class="bg-white shadow dark:bg-gray-800  sticky top-0 z-10">
             <div class="container px-6 py-3 md:py-1 mx-auto">
                 <div class="flex flex-col md:flex-row md:justify-between md:items-center">
                     <div class="flex items-center justify-between relative">
@@ -16,7 +16,7 @@
                             </a>
                         </div>
                         <!-- Mobile menu button -->
-                        <div class="flex md:hidden">
+                        <div class="flex md:hidden" @click="open_mobile = !open_mobile">
                             <button  type="button" class="md:hidden text-gray-500 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400" aria-label="toggle menu">
                                 <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current">
                                     <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"></path>
@@ -26,7 +26,7 @@
                     </div>
 
                     <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
-                    <div class="lg:hidden origin-top-right z-50 absolute top-8 right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                    <div v-show="open_mobile" class="lg:hidden origin-top-right z-20 absolute top-8 right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
                         <div class="py-1" role="none">
                             <a href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Layouts</a>
                             <h5 class="px-4">Components</h5>
@@ -175,7 +175,12 @@
 
 <script>
 export default {
-  layout:'App'
+  layout:'App',
+  data(){
+    return{
+      open_mobile:false,
+    }
+  }
 }
 </script>
 

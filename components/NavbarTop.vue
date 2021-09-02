@@ -25,15 +25,25 @@
                   <span @click="show_mobile_drop = false;" href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Layouts</span>
                   </NuxtLink>
                   <h5 class="px-4">Components</h5>
+                  <NuxtLink to="/components/alerts">
+                  <span @click="show_mobile_drop = false;" href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Alerts</span>
+                  </NuxtLink>
+                  <NuxtLink to="/components/avatars">
+                  <span @click="show_mobile_drop = false;" href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Avatars</span>
+                  </NuxtLink>
                   <NuxtLink to="/components/breadcrumbs">
                   <span @click="show_mobile_drop = false;" href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Breadcrumb</span>
+                  </NuxtLink>
+                  <h5 class="px-4">Pages</h5>
+                  <NuxtLink to="/pages/login">
+                  <span @click="show_mobile_drop = false;" href="#" class="text-gray-700 block px-4 py-2 text-sm" role="menuitem" tabindex="-1" id="menu-item-0">Login</span>
                   </NuxtLink>
               </div>
           </div>
           <div class="items-center md:flex hidden">
               <div class="flex flex-col mt-2 md:flex-row md:mt-0 md:mx-1">
-                  <a class="my-1 text-sm leading-5 text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-indigo-400 hover:underline md:mx-4 md:my-0" href="">Components</a>
-                  <a class="my-1 text-sm leading-5 text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-indigo-400 hover:underline md:mx-4 md:my-0" href="">Pages</a>
+                  <!-- <a class="my-1 text-sm leading-5 text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-indigo-400 hover:underline md:mx-4 md:my-0" href="">Components</a>
+                  <a class="my-1 text-sm leading-5 text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-indigo-400 hover:underline md:mx-4 md:my-0" href="">Pages</a> -->
               </div>
               <div class="flex items-center py-2 -mx-1 md:mx-0">
 
