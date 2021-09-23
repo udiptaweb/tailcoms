@@ -1,5 +1,6 @@
 <template>
   <div class="border p-4">
+    <h2 class="text-md font-semibold text-gray-500" v-if="title">{{title}}</h2>
     <div class="flex justify-end gap-x-1 mb-2">
         <button @click="showCode" class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-3 text-xs border border-gray-400 rounded shadow">
           <span class="flex justify-center items-center gap-x-1" v-show="!show_code">
@@ -26,6 +27,7 @@
 
 <script>
 export default {
+  props:['title'],
   data(){
     return{
       show_code:false
@@ -34,6 +36,29 @@ export default {
   methods:{
     showCode(){
       this.show_code = !this.show_code;
+    },
+    fallbackCopyTextToClipboard(text) {
+      var textArea = document.createElement("textarea");
+      textArea.value = text;
+
+      // Avoid scrolling to bottom
+      textArea.style.top = "0";
+      textArea.style.left = "0";
+      textArea.style.position = "fixed";
+
+      document.body.appendChild(textArea);
+      textArea.focus();
+      textArea.select();
+
+      try {
+        var successful = document.execCommand('copy');
+        var msg = successful ? 'successful' : 'unsuccessful';
+        console.log('Fallback: Copying text command was ' + msg);
+      } catch (err) {
+        console.error('Fallback: Oops, unable to copy', err);
+      }
+
+      document.body.removeChild(textArea);
     }
   }
 }
