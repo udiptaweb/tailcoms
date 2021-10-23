@@ -3,13 +3,11 @@
       <NavbarTop />
       <div class="w-full">
           <div class="min-h-screen">
-            <div class="flex justify-center gap-x-2">
-              <div class="w-1/4 shadow hidden md:block">
-                <Sidebar />
-              </div>
-              <div class="w-full md:w-3/4 flex justify-center gap-x-4">
+            <div class="flex bg-red-500">
+              <Sidebar />
+              <main class="overflow-x-auto">
                 <Nuxt />
-              </div>
+              </main>
             </div>
           </div>
       </div>

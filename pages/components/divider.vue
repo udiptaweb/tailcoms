@@ -2,38 +2,10 @@
 <div class="w-full flex flex-col justify-start gap-y-2 bg-white dark:bg-gray-800 h-full p-4">
   <h1 class="text-2xl font-semibold tracking-widest text-gray-700 rounded-lg dark-mode:text-white">Divider</h1>
   <h2 class="text-xl font-semibold tracking-widest text-gray-700 rounded-lg dark-mode:text-white">Examples</h2>
-    <code-and-preview :title="'Divider x-axis with default width'">
-        <template v-slot:preview>
-          <div v-html="code1"></div>
-        </template>
-        <template v-slot:code>
-          {{code1}}
-        </template>
-    </code-and-preview>
-    <code-and-preview :title="'Divider x-axis with width 2'">
-        <template v-slot:preview>
-          <div v-html="code2"></div>
-        </template>
-        <template v-slot:code>
-          {{code2}}
-        </template>
-    </code-and-preview>
-    <code-and-preview :title="'Divider y-axis with default width'">
-      <template v-slot:preview >
-        <div v-html="code3"></div>
-      </template>
-      <template v-slot:code>
-        {{code3}}
-      </template>
-    </code-and-preview>
-    <code-and-preview :title="'Divider y-axis with width 2'">
-      <template v-slot:preview >
-        <div v-html="code4"></div>
-      </template>
-      <template v-slot:code>
-        {{code4}}
-      </template>
-    </code-and-preview>
+    <code-and-preview :code="code1" :title="'Divider x-axis with default width'"></code-and-preview>
+    <code-and-preview :code="code2" :title="'Divider x-axis with width 2'"></code-and-preview>
+    <code-and-preview :code="code3" :title="'Divider y-axis with default width'"></code-and-preview>
+    <code-and-preview :code="code4" :title="'Divider y-axis with width 2'"></code-and-preview>
 </div>
 </template>
 

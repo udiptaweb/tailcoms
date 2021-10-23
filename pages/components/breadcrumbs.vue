@@ -3,81 +3,45 @@
   <h1 class="text-2xl font-semibold tracking-widest text-gray-700 rounded-lg dark-mode:text-white">Breadcrumb</h1>
   <p class="text-gray-700">Indicate the current page’s location within a navigational hierarchy</p>
   <h2 class="text-xl font-semibold tracking-widest text-gray-700 rounded-lg dark-mode:text-white">Examples</h2>
-   <code-and-preview>
-      <template v-slot:preview>
-        <ul class="flex text-gray-500 text-sm lg:text-base overflow-auto">
-          <li class="inline-flex items-center">
-            <a href="/">Home</a>
-            <svg
-              class="h-5 w-auto text-gray-400"
-              fill="currentColor"
-              viewBox="0 0 20 20"
+   <code-and-preview :code="breadcrumb1"></code-and-preview>
+   <code-and-preview :code="breadcrumb2"></code-and-preview>
+   <code-and-preview :code="breadcrumb3"></code-and-preview>
+</div>
+</template>
+
+<script>
+import CodeAndPreview from '../../components/CodeAndPreview.vue';
+export default {
+  components: { CodeAndPreview },
+  layout:'App',
+  computed:{
+    breadcrumb3(){
+      return `<ul class="flex py-1 text-gray-500 text-sm lg:text-base">
+          <li>
+            <a
+              href="/"
+              class="p-2 rounded bg-white hover:bg-indigo-400 hover:text-white transition ease-out duration-200"
+            >Home</a
             >
-              <path
-                fill-rule="evenodd"
-                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
           </li>
-          <li class="inline-flex items-center">
-            <a href="#">Components</a>
-            <svg
-              class="h-5 w-auto text-gray-400"
-              fill="currentColor"
-              viewBox="0 0 20 20"
+          <li>
+            <a
+              href="#"
+              class="p-2 rounded bg-white hover:bg-indigo-400 hover:text-white transition ease-out duration-200"
+            >Components</a
             >
-              <path
-                fill-rule="evenodd"
-                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
           </li>
-          <li class="inline-flex items-center">
-            <a href="#" class="text-indigo-400">Breadcrumb</a>
+          <li>
+            <a
+              href="#"
+              class="p-2 rounded bg-indigo-400 text-white shadow-xs"
+            >Breadcrumb</a
+            >
           </li>
-        </ul>
-      </template>
-      <template v-slot:code>
-        &lt;ul class="flex text-gray-500 text-sm lg:text-base overflow-auto"&gt;
-          &lt;li class="inline-flex items-center"&gt;
-            &lt;a href="/"&gt;Home&lt;/a&gt;
-            &lt;svg
-              class="h-5 w-auto text-gray-400"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-            &gt;
-              &lt;path
-                fill-rule="evenodd"
-                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                clip-rule="evenodd"
-              &gt;&lt;/path&gt;
-            &lt;/svg&gt;
-          &lt;/li&gt;
-          &lt;li class="inline-flex items-center"&gt;
-            &lt;a href="#"&gt;Components&lt;/a&gt;
-            &lt;svg
-              class="h-5 w-auto text-gray-400"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-            &gt;
-              &lt;path
-                fill-rule="evenodd"
-                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                clip-rule="evenodd"
-              &gt;&lt;/path&gt;
-            &lt;/svg&gt;
-          &lt;/li&gt;
-          &lt;li class="inline-flex items-center"&gt;
-            &lt;a href="#" class="text-indigo-400"&gt;Breadcrumb&lt;/a&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      </template>
-   </code-and-preview>
-   <code-and-preview>
-      <template v-slot:preview>
-        <ul class="flex text-gray-500 text-sm lg:text-base overflow-auto">
+        </ul>`;
+    },
+    breadcrumb2(){
+      return `<ul class="flex text-gray-500 text-sm lg:text-base overflow-auto">
           <li class="inline-flex items-center">
             <svg class="flex-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1.1em" height="1.1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M20 6h-8l-2-2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2m0 12H4V8h16m-7 9v-3h2v3h2v-4h2l-5-4l-5 4h2v4z" fill="currentColor"/></svg>
             <a href="/">Home</a>
@@ -112,107 +76,44 @@
             <svg class="flex-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1.1em" height="1.1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M3 5v14h19V5H3m2 2h15v4H5V7m0 10v-4h4v4H5m6 0v-4h9v4h-9z" fill="currentColor"/></svg>
             <a href="#">Breadcrumbs</a>
           </li>
-        </ul>
-      </template>
-      <template v-slot:code>
-        &lt;ul class="flex text-gray-500 text-sm lg:text-base overflow-auto"&gt;
-          &lt;li class="inline-flex items-center"&gt;
-            &lt;svg class="flex-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1.1em" height="1.1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"&gt;&lt;path d="M20 6h-8l-2-2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2m0 12H4V8h16m-7 9v-3h2v3h2v-4h2l-5-4l-5 4h2v4z" fill="currentColor"/&gt;&lt;/svg&gt;
-            &lt;a href="/"&gt;Home&lt;/a&gt;
-            &lt;svg
+        </ul>`;
+    },
+    breadcrumb1(){
+      return `<ul class="flex text-gray-500 text-sm lg:text-base overflow-auto">
+          <li class="inline-flex items-center">
+            <a href="/">Home</a>
+            <svg
               class="h-5 w-auto text-gray-400"
               fill="currentColor"
               viewBox="0 0 20 20"
-            &gt;
-              &lt;path
+            >
+              <path
                 fill-rule="evenodd"
                 d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
                 clip-rule="evenodd"
-              &gt;&lt;/path&gt;
-            &lt;/svg&gt;
-          &lt;/li&gt;
-          &lt;li class="inline-flex items-center"&gt;
-            &lt;svg class="flex-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1.1em" height="1.1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"&gt;&lt;path d="M3 5v14h19V5H3m2 2h15v4H5V7m0 10v-4h4v4H5m6 0v-4h9v4h-9z" fill="currentColor"/&gt;&lt;/svg&gt;
-            &lt;a href="#"&gt;Components&lt;/a&gt;
-            &lt;svg
+              ></path>
+            </svg>
+          </li>
+          <li class="inline-flex items-center">
+            <a href="#">Components</a>
+            <svg
               class="h-5 w-auto text-gray-400"
               fill="currentColor"
               viewBox="0 0 20 20"
-            &gt;
-              &lt;path
+            >
+              <path
                 fill-rule="evenodd"
                 d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
                 clip-rule="evenodd"
-              &gt;&lt;/path&gt;
-            &lt;/svg&gt;
-          &lt;/li&gt;
-          &lt;li class="inline-flex items-center"&gt;
-            &lt;svg class="flex-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1.1em" height="1.1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"&gt;&lt;path d="M3 5v14h19V5H3m2 2h15v4H5V7m0 10v-4h4v4H5m6 0v-4h9v4h-9z" fill="currentColor"/&gt;&lt;/svg&gt;
-            &lt;a href="#"&gt;Breadcrumbs&lt;/a&gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      </template>
-   </code-and-preview>
-   <code-and-preview>
-      <template v-slot:preview>
-        <ul class="flex py-1 text-gray-500 text-sm lg:text-base">
-          <li>
-            <a
-              href="/"
-              class="p-2 rounded bg-white hover:bg-indigo-400 hover:text-white transition ease-out duration-200"
-            >Home</a
-            >
+              ></path>
+            </svg>
           </li>
-          <li>
-            <a
-              href="#"
-              class="p-2 rounded bg-white hover:bg-indigo-400 hover:text-white transition ease-out duration-200"
-            >Components</a
-            >
+          <li class="inline-flex items-center">
+            <a href="#" class="text-indigo-400">Breadcrumb</a>
           </li>
-          <li>
-            <a
-              href="#"
-              class="p-2 rounded bg-indigo-400 text-white shadow-xs"
-            >Breadcrumb</a
-            >
-          </li>
-        </ul>
-      </template>
-      <template v-slot:code>
-        &lt;ul class="flex py-1 text-gray-500 text-sm lg:text-base"&gt;
-          &lt;li&gt;
-            &lt;a
-              href="/"
-              class="p-2 rounded bg-white hover:bg-indigo-400 hover:text-white transition ease-out duration-200"
-            &gt;Home&lt;/a
-            &gt;
-          &lt;/li&gt;
-          &lt;li&gt;
-            &lt;a
-              href="#"
-              class="p-2 rounded bg-white hover:bg-indigo-400 hover:text-white transition ease-out duration-200"
-            &gt;Components&lt;/a
-            &gt;
-          &lt;/li&gt;
-          &lt;li&gt;
-            &lt;a
-              href="#"
-              class="p-2 rounded bg-indigo-400 text-white shadow-xs"
-            &gt;Breadcrumb&lt;/a
-            &gt;
-          &lt;/li&gt;
-        &lt;/ul&gt;
-      </template>
-   </code-and-preview>
-</div>
-</template>
-
-<script>
-import CodeAndPreview from '../../components/CodeAndPreview.vue';
-export default {
-  components: { CodeAndPreview },
-  layout:'App'
+        </ul>`;
+    }
+  }
 }
 </script>
 
