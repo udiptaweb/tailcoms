@@ -3,7 +3,7 @@
       <NavbarTop />
       <div class="w-full">
           <div class="min-h-screen">
-            <div class="flex bg-red-500">
+            <div class="flex">
               <Sidebar />
               <main class="overflow-x-auto">
                 <Nuxt />
